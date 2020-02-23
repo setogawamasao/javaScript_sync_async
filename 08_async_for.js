@@ -15,7 +15,7 @@ var main = async () => {
   // 何もなしだと並列
   // !!!最もシンプルなfor文にasync/awaitはサポートされていない。!!!
   for (var i = 0; i < objects.length; i++) {
-    sampleResolve(objects[i]);
+    wait(objects[i]);
   }
 
   var end = Date.now();

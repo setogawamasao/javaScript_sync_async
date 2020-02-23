@@ -14,7 +14,7 @@ var main = async () => {
   console.log("計測開始");
   // for of の場合は　awaitが使える
   for (var object of objects) {
-    await sampleResolve(object);
+    await wait(object);
   }
 
   var end = Date.now();
@@ -22,8 +22,6 @@ var main = async () => {
 };
 
 main();
-
-sample();
 
 // 計測開始
 // start: 1000

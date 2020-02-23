@@ -14,7 +14,7 @@ var main = async () => {
   console.log("計測開始");
   // for ofでも非同期で並列
   for (var object of objects) {
-    sampleResolve(object);
+    wait(object);
   }
 
   var end = Date.now();
