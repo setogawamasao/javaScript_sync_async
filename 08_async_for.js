@@ -14,7 +14,8 @@ var main = async () => {
   console.log("計測開始");
   // 何もなしだと並列
   for (var i = 0; i < objects.length; i++) {
-    await wait(objects[i]);
+    wait(objects[i]);
+    //await wait(objects[i]);
   }
 
   var end = Date.now();
