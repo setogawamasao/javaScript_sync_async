@@ -13,9 +13,8 @@ var main = async () => {
   var start = Date.now();
   console.log("計測開始");
   // 何もなしだと並列
-  // !!!最もシンプルなfor文にasync/awaitはサポートされていない。!!!
   for (var i = 0; i < objects.length; i++) {
-    wait(objects[i]);
+    await wait(objects[i]);
   }
 
   var end = Date.now();

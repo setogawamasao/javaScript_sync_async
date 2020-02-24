@@ -29,7 +29,6 @@
 ## 08_async_for.js
 
     非同期に実行されるFOR文
-    ※最もシンプルなfor文にasync/awaitはサポートされていない。
 
 ## 09_async_for_of.js
 
